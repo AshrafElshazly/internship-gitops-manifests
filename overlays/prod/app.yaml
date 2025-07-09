@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-demo
+spec:
+  destination:
+    namespace: kustomize-prod
+    server: https://kubernetes.default.svc
+  source:
+    path: overlays/prod
+    repoURL: https://github.com/AshrafElshazly/internship-gitops-manifests
+    targetRevision: main
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
