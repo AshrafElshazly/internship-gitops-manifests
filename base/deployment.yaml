@@ -15,5 +15,3 @@ spec:
       containers:
         - name: gitops-demo
           image: ashrafelshazlii/java-app-test:0.0.0
-          ports:
-            - containerPort: 80
