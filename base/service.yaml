@@ -5,8 +5,4 @@ metadata:
 spec:
   selector:
     app: gitops-demo
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
   type: NodePort
