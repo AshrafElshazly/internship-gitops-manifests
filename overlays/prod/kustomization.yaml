@@ -23,4 +23,5 @@ configMapGenerator:
 
 images:
 - name: ashrafelshazlii/gitops-demo
-  newTag: 0.1.0
+  newName: ashrafelshazlii/gitops-demo
+  newTag: 1.0.0
