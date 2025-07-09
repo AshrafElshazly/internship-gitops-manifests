@@ -22,5 +22,8 @@ configMapGenerator:
   name: database-config
 
 images:
+- name: ashrafelshazlii/gitops-demo
+  newName: ashrafelshazlii/gitops-demo
+  newTag: 1.1.0
 - name: ashrafelshazlii/java-app-test
   newTag: 1.0.0
